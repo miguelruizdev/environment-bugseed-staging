@@ -31,7 +31,16 @@ global:
 infrastructure:
   activiti-keycloak:
     keycloak:
+      enabled: true
       keycloak:
+        username: admin
+        password: admin
+        extraEnv: |
+          - name: PROXY_ADDRESS_FORWARDING
+            value: "true"
+        persistence:
+          deployPostgres: false
+          dbVendor: H2
         ingress:
           enabled: true
           path: /
