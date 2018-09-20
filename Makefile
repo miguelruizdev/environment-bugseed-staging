@@ -11,6 +11,7 @@ build: clean
 	helm repo add jenkins-x http://chartmuseum.build.cd.jenkins-x.io
 	helm dependency build ${DIR}
 	helm lint ${DIR}
+	helm repo add activiti-cloud-charts https://activiti.github.io/activiti-cloud-charts/
 
 install: 
 	helm upgrade ${NAMESPACE} ${DIR} --install --namespace ${NAMESPACE} --debug
