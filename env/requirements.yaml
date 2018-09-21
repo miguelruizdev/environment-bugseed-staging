@@ -22,6 +22,9 @@ dependencies:
 - name: ttc-connectors-dummytwitter
   repository: http://jenkins-x-chartmuseum:8080
   version: 1.0.45
+- name: ttc-connectors-processing
+  repository: http://jenkins-x-chartmuseum:8080
+  version: 1.0.22
 - name: ttc-connectors-ranking
   repository: http://jenkins-x-chartmuseum:8080
   version: 1.0.33
