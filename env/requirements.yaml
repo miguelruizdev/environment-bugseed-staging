@@ -39,7 +39,7 @@ dependencies:
   version: 0.0.54
 - name: ttc-query-campaign
   repository: http://jenkins-x-chartmuseum:8080
-  version: 1.0.50
+  version: 1.0.51
 - name: ttc-rb-english-campaign
   repository: http://jenkins-x-chartmuseum:8080
   version: 1.0.11
